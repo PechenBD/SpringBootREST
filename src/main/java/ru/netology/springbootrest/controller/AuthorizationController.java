@@ -10,9 +10,9 @@ import java.util.List;
 
 @RestController
 public class AuthorizationController {
-    AuthorizationService service;
+    final AuthorizationService service;
 
-    public AuthorizationController(AuthorizationService service) {
+    private AuthorizationController(AuthorizationService service) {
         this.service = service;
     }
 
